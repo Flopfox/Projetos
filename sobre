@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim - João Malafaia</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a2f8783a8b.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="menu">
+            <h1>Menu</h1>
+            <br>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <br>
+                <li><a href="sobre.html">SOBRE MIM</a></li>
+                <br>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <br>
+                <li><a href="contato.html">CONTATO</a></li>
+                <br>
+            </ul>
+            <ul class="links">
+                <li>
+                    <a href="https://github.com/Flopfox" <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-m-a37bb613b/" <i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <h5>@2024 Flopfox</h5>
+        </div>
+        <div class="main-content">
+            <div class="ct1">
+                <h1>SOBRE MIM</h1>
+                <br>
+                <p>Sou um desenvolvedor iniciante e curioso afim de aprender coisas novas,</p>
+                <p>e aplicar meus conhecimentos para o meu</p>
+                <p>desenvolvimento.</p>
+            </div>
+
+            <div class="conteudo1">
+                
+                <div class="imagem1">
+                    <img src="imagens/eu.jpg" class="img1">
+                </div>
+            </div>
+
+                <div class="ct2">
+                    <h1>JOÃO GABRIEL MALAFAIA</h1>
+                    <br>
+                    <h3>DESENVOLVEDOR HTML E CSS</h3>
+                    <br>
+                    <p>Sou um estudante de análise e desenvolvimento de sistemas pronto para novos aprendizados e desafios,</p>
+                    <p>gostaria de uma oportunidade para aplicar meus conhecimentos no mercado de trabalho e conseguir</p>
+                    <p>me auto-desenvolver.</p>
+                    <p>Atualmente estou fazendo também cursos por fora da faculdade para abranger a  maior capacidade possível</p>
+                    <p>de tecnologias.</p>
+                    <p>Cursos como: HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP, OO, MySQL, JQuery, MVC, APIs, IONIC,</p>
+                    <p>entre outras tecnologias.</p>
+                </div>
+                <div class="botao1">
+                    <input type="submit" onclick="downloadFile()" value="Download CV">
+                </div>
+                <div class="ct3">
+                    <h3>Minhas linguagens</h3>
+                </div>
+                <div class="stack">
+                    <img src="imagens/html.png" class="html">
+                    <img src="imagens/css.png" class="css">
+                </div>
+        </div>
+    </div>
+
+
+    <script>
+        function downloadFile() {
+            const link = document.createElement('a');
+            link.href = 'cv_joao_malafaia.pdf';  // Substitua pelo caminho do seu arquivo
+            link.download = 'CV_Joao_Malafaia.extensao';  // Substitua pelo nome do arquivo que deseja salvar
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+
+</body>
+</html>
